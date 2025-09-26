@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int eng,math,sci,comp,hist,total;
+    float average,percentage;
+    scanf("%d %d %d %d %d",&eng,&math,&sci,&comp,&hist);
+    total=eng+math+sci+comp+hist;
+    average=total/5.0;
+    percentage=(total/500.0)*100;
+    printf("%d %.2f %.2f",total,average,percentage);
+    return 0;
+}
