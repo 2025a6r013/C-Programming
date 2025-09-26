@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 int main() {
     float r,a,l,w;
     const float pi=3.1416;
