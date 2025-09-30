@@ -5,14 +5,35 @@
 int main() {
     int A,B,C;
     scanf("%d %d %d",&A,&B,&C);
-    if (A>=B&&A>=C) {
+    if (A>B&&A>C) {
         printf("%d\n",A);
     }
-    else if (B>=A&&B>=C) {
+    else if (B>A&&B>C) {
         printf("%d\n",B);
     }
     else {
         printf("%d\n",C);
     }
+    return 0;
+}
+
+
+                                  OR
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int A,B,C,largest;
+    scanf("%d %d %d",&A, &B, &C);
+    largest=A;
+    if (B>largest) {
+        largest=B;
+    }
+    if (C>largest) {
+        largest=C;
+    }
+    printf("%d\n",largest);
     return 0;
 }
