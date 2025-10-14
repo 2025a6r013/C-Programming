@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int N,row,space,coll;
+    scanf("%d",&N);
+    for(row=1;row<=N;row++){
+        for(space=N;space>row;space--){
+            printf("  ");
+        }
+        for(coll=1;coll<=row;coll++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
