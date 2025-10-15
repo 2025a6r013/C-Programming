@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x, y, sum=0;
+    scanf("%d %d", &x, &y);
+    int array[x][y];
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            scanf("%d", &array[i][j]);
+        }
+    }
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            sum+=array[i][j];
+        }
+    }
+    printf("%d",sum);
+    return 0;
+}
