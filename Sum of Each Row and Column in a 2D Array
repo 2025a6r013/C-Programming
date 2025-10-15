@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x, y;
+    scanf("%d %d", &x, &y);
+    int array[x][y];
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            scanf("%d", &array[i][j]);
+        }
+    }
+    for (int i = 0; i < x; i++) {
+        int rsum = 0;  
+        for (int j = 0; j < y; j++) {
+            rsum += array[i][j]; 
+        }
+        printf("%d\n", rsum);  
+    }
+    for (int j = 0; j < y; j++) {
+        int csum = 0;
+        for (int i = 0; i < x; i++) {
+            csum += array[i][j];
+        }
+        printf("%d\n",csum);
+    }
+    return 0;
+}
