@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char roll_number[20];
+    char name[100];
+    char branch[50];
+    char section[10];
+    char college[100];
+    scanf("%[^\n]", roll_number);      
+    getchar();                         
+    scanf("%[^\n]", name);             
+    getchar();                         
+    scanf("%[^\n]", branch);           
+    getchar();                         
+    scanf("%[^\n]", section);          
+    getchar();                         
+    scanf("%[^\n]", college);         
+    printf("Roll Number: %s\n", roll_number);
+    printf("Name: %s\n", name);
+    printf("Branch: %s\n", branch);
+    printf("Section: %s\n", section);
+    printf("College: %s\n", college);    
+    return 0;
+}
