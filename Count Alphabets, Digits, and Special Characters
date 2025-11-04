@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h> 
+int main() {
+    char str[1001];
+    int alphabets = 0, digits = 0, specials = 0;
+    scanf("%[^\n]%*c", str);
+    for (int i = 0; str[i] != '\0'; i++) {
+        char ch = str[i];
+
+        if (isalpha(ch)) {
+            alphabets++;
+        } else if (isdigit(ch)) {
+            digits++;
+        } else {
+            specials++;
+        }
+    }
+    printf("%d %d %d\n", alphabets, digits, specials);
+    return 0;
+}
