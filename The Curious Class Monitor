@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+struct student {
+    char name[50];
+    int age;
+    char grade;
+};
+int main() {
+    struct student s;
+    scanf("%[^\n]%*c", s.name);
+    scanf("%d", &s.age);
+    scanf(" %c", &s.grade);
+    printf("Name: %s\n", s.name);
+    printf("Age: %d\n", s.age);
+    printf("Grade: %c\n", s.grade);
+    return 0;
+}
