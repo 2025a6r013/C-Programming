@@ -2,7 +2,7 @@
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
-#include <string.h>
+
 struct Student {
     int roll_no;
     char name[50];
